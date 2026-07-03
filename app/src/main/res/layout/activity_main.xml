@@ -1,21 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="#03B4F4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<!--   Below is a textview -->
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello Wangui!"
+        android:text="𝗛𝗲𝗮𝗹𝘁𝗵 𝗮𝗻𝗱 𝗪𝗲𝗹𝗹𝗻𝗲𝘀𝘀"
         android:textSize="40sp"
-        android:textColor="#835caa"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFE500"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!--    Below is our image -->
+
+    <!--    Below are our buttons -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wellness" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="🥑 𝗛𝗲𝗮𝗹𝘁𝗵𝘆 𝗥𝗲𝗰𝗶𝗽𝗲𝘀"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:backgroundTint="#EF85CE"
+        android:padding="12dp"
+        android:textColor="#F9F905"
+        android:textSize="25sp"
+        android:id="@+id/healthyrecipes"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="🥗 𝗡𝘂𝘁𝗿𝗶𝘁𝗶𝗼𝗻 𝗔𝗱𝘃𝗶𝗰𝗲"
+        android:textSize="25sp"
+        android:textColor="#F9F905"
+        android:padding="12dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="#EF85CE"
+        android:id="@+id/nutritionadvice"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="🧘 𝗠𝗲𝗱𝗶𝘁𝗮𝘁𝗶𝗼𝗻"
+        android:textSize="25sp"
+        android:textColor="#F9F905"
+        android:padding="12dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="#EF85CE"
+        android:id="@+id/meditation"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="💧 𝗛𝘆𝗱𝗿𝗮𝘁𝗶𝗼𝗻 𝗔𝗹𝗲𝗿𝘁"
+        android:textSize="25sp"
+        android:textColor="#F9F905"
+        android:padding="12dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="#EF85CE"
+        android:id="@+id/hydrationalert"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="🏃 𝗦𝘁𝗮𝗿𝘁 𝗘𝘅𝗲𝗿𝗰𝗶𝘀𝗲"
+        android:textSize="25sp"
+        android:textColor="#F9F905"
+        android:padding="12dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="#EF85CE"
+        android:id="@+id/startexercise"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="🌟 𝗗𝗮𝗶𝗹𝘆 𝗠𝗼𝘁𝗶𝘃𝗮𝘁𝗶𝗼𝗻"
+        android:textSize="25sp"
+        android:textColor="#F9F905"
+        android:padding="12dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:backgroundTint="#EF85CE"
+        android:id="@+id/dailymotivation"/>
+
+</LinearLayout>
