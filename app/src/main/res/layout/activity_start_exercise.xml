@@ -1,21 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF8E1"
     tools:context=".StartExerciseActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Let's start exercising"
-        android:textSize="35sp"
-        android:textAlignment="center"
-        android:layout_marginTop="20dp"
-        android:textColor="#6400A3"
-        />
+        android:orientation="vertical">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏃 𝗦𝘁𝗮𝗿𝘁 𝗘𝘅𝗲𝗿𝗰𝗶𝘀𝗲"
+            android:textStyle="bold|italic"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#C8202020"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/exercise2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Regular exercise keeps your body strong, improves your mood, and boosts your overall health.\n\n💪 Simple Exercises\n🚶 Walk for 20–30 minutes.\n🏃 Jog or run at a comfortable pace.\n🤸 Stretch for 5–10 minutes.\n🚴 Ride a bicycle.\n🧘 Practice yoga or light exercises.\n\nTip: Start slowly and stay active every day for a healthier lifestyle.
+"
+            android:padding="16dp"
+            android:textColor="#373333"/>
+
+    </LinearLayout>
+
+</ScrollView>

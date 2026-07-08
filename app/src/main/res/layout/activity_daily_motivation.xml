@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F0C370"
     tools:context=".DailyMotivationActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Welcome to daily motivation"
-        android:textSize="35sp"
-        android:textAlignment="center"
-        android:layout_marginTop="20dp"
-        android:textColor="#6400A3"
-        />
+        android:orientation="vertical">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌟 𝗗𝗮𝗶𝗹𝘆 𝗠𝗼𝘁𝗶𝘃𝗮𝘁𝗶𝗼𝗻"
+            android:textStyle="bold|italic"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#C8202020"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/motivation2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Stay positive and take one healthy step every day. Small actions lead to big results!\n\n🏃 Daily Activity Challenge\n\nChoose one healthy activity to complete each day:\n🚶 Take a 20-minute walk.\n 💧 Drink 8 glasses of water.\n🍎 Eat at least one fruit or vegetable.\n🧘 Stretch for 10 minutes.\n😴 Get 7–9 hours of sleep.\n😊 Share a smile or kind word with someone.\nRemember: Every healthy choice brings you one step closer to a healthier, happier you!"
+            android:padding="16dp"
+            android:textColor="#373333"/>
+
+    </LinearLayout>
+
+</ScrollView>

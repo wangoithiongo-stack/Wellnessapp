@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D3EDFB"
     tools:context=".HydrationActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Welcome to hydration page"
-        android:textSize="35sp"
-        android:textAlignment="center"
-        android:layout_marginTop="20dp"
-        android:textColor="#6400A3"
-        />
+        android:orientation="vertical">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="𝐇𝐲𝐝𝐫𝐚𝐭𝐢𝐨𝐧 𝐀𝐥𝐞𝐫𝐭🚰"
+            android:textStyle="bold|italic"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#C8202020"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hydrationalert1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Hydration is the process of drinking enough fluids to keep your body healthy, energized, and functioning properly.\n\n 💧Drink More Water\n Water helps regulate body temperature, transport nutrients, and prevent dehydration.\n\n 🥤Choose Healthy Drinks\n Drink water, milk, or unsweetened beverages instead of sugary drinks.\n\n🍉 Eat Water-Rich Foods\n Fruits and vegetables like watermelon, cucumber, and oranges help keep you hydrated.\n\n🏃 Stay Hydrated During Exercise\nDrink water before, during, and after physical activity to replace lost fluids.\n\n☀️ Drink More in Hot Weather\n Your body loses more water in the heat, so increase your fluid intake to stay hydrated."
+            android:padding="16dp"
+            android:textColor="#373333"/>
+
+    </LinearLayout>
+
+</ScrollView>

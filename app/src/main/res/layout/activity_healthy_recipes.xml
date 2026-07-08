@@ -1,21 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BAF0C4"
     tools:context=".HealthyRecipesActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Welcome to healthy recipes"
-        android:textSize="35sp"
-        android:textAlignment="center"
-        android:layout_marginTop="20dp"
-        android:textColor="#6400A3"
-        />
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🍏𝗛𝗲𝗮𝗹𝘁𝗵𝘆 𝗥𝗲𝗰𝗶𝗽𝗲𝘀"
+            android:textStyle="bold|italic"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#C8202020"
+            />
 
-</LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/healthyrecipe4"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="\nHealthy recipes are meals made with nutritious ingredients that provide essential nutrients, support good health, and help maintain a balanced diet.\n\n 🍎Apple\n Apples are rich in fiber and vitamin C. They support heart health, aid digestion, and make a healthy snack. \n\n 🥕Carrot\n Carrots are an excellent source of vitamin A, which helps maintain healthy eyesight and supports the immune system.\n\n 🍌Banana\n Bananas provide potassium, which helps keep muscles and the heart healthy. They are a great source of natural energy.  \n\n 🥩Meat Products\nMeat products are rich in protein and essential nutrients that help build muscles, support growth, and provide energy."
+            android:padding="16dp"
+            android:textColor="#373333"/>
+    </LinearLayout>
+</ScrollView>

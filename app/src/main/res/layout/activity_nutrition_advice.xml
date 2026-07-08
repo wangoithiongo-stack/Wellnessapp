@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F6DBED"
     tools:context=".NutritionAdviceActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Welcome to the nutrtional advice page"
-        android:textSize="35sp"
-        android:textAlignment="center"
-        android:layout_marginTop="20dp"
-        android:textColor="#6400A3"
-        />
+        android:orientation="vertical">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🥗𝐍𝐮𝐭𝐫𝐢𝐭𝐢𝐨𝐧𝐚𝐥 𝐀𝐝𝐯𝐢𝐜𝐞"
+            android:textStyle="bold|italic"
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#C8202020"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/nutrtional2"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Nutritional advice helps you make healthy food choices that provide your body with the nutrients it needs to stay healthy and active.\n\n 💧 Drink Plenty of Water\n Water keeps your body hydrated and helps it function properly. Aim to drink enough water throughout the day.\n\n🥗 Eat a Balanced Diet\nInclude fruits, vegetables, whole grains, lean proteins, and healthy fats in your meals for balanced nutrition.\n\n🍎 Eat More Fruits and Vegetables\nFruits and vegetables provide vitamins, minerals, and fiber that support good health.\n\n🍬 Limit Sugar\n Reduce sugary drinks and snacks to help maintain healthy teeth and a healthy weight.\n\n🧂 Reduce Salt Intake\nEating less salt can help keep your blood pressure at a healthy level.\n\n🍽️ Watch Portion Sizes\nEating the right amount of food helps maintain a healthy weight and prevents overeating."
+            android:padding="16dp"
+            android:textColor="#373333"/>
+
+    </LinearLayout>
+
+</ScrollView>
