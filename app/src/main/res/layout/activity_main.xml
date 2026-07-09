@@ -33,6 +33,14 @@
             android:scaleType="centerCrop"
             android:src="@drawable/wellness" />
 
+<!--        Below is our first banner ad-->
+        <com.google.android.gms.ads.AdView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adview"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+
         <!--    Below are our buttons -->
         <Button
             android:layout_width="match_parent"

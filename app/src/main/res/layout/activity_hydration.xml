@@ -9,37 +9,37 @@
     android:background="#D3EDFB"
     tools:context=".HydrationActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="𝐇𝐲𝐝𝐫𝐚𝐭𝐢𝐨𝐧 𝐀𝐥𝐞𝐫𝐭🚰"
-            android:textStyle="bold|italic"
-            android:textSize="35sp"
-            android:textAlignment="center"
-            android:layout_marginTop="20dp"
-            android:textColor="#C8202020"
-            />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="𝐇𝐲𝐝𝐫𝐚𝐭𝐢𝐨𝐧 𝐀𝐥𝐞𝐫𝐭🚰"
+               android:textStyle="bold|italic"
+               android:textSize="35sp"
+               android:textAlignment="center"
+               android:layout_marginTop="20dp"
+               android:textColor="#C8202020"
+               />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="10dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/hydrationalert1" />
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="200dp"
+               android:layout_marginTop="10dp"
+               android:scaleType="centerCrop"
+               android:src="@drawable/hydrationalert1" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="Hydration is the process of drinking enough fluids to keep your body healthy, energized, and functioning properly.\n\n 💧Drink More Water\n Water helps regulate body temperature, transport nutrients, and prevent dehydration.\n\n 🥤Choose Healthy Drinks\n Drink water, milk, or unsweetened beverages instead of sugary drinks.\n\n🍉 Eat Water-Rich Foods\n Fruits and vegetables like watermelon, cucumber, and oranges help keep you hydrated.\n\n🏃 Stay Hydrated During Exercise\nDrink water before, during, and after physical activity to replace lost fluids.\n\n☀️ Drink More in Hot Weather\n Your body loses more water in the heat, so increase your fluid intake to stay hydrated."
-            android:padding="16dp"
-            android:textColor="#373333"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="20sp"
+               android:text="Drink enough water every day to stay healthy, energized, and refreshed. Turn on reminders and never miss your next glass.\n\n💧Drink More Water\n Water helps regulate body temperature, transport nutrients, and prevent dehydration.\n\n🧠 Boost Brain function\nStaying hydrated improves concentration, memory, and mental alertness.\n\n❤️ Support Heart Health\nProper hydration helps your heart pump blood efficiently throughout your body.\n\n⚡ Increase Energy\nDrinking enough water reduces fatigue and keeps you feeling energized.\n\n🌿 Improve Digestion\nWater helps break down food, absorb nutrients, and prevent constipation."
+               android:padding="16dp"
+               android:textColor="#373333"/>
 
-    </LinearLayout>
+       </LinearLayout>
 
 </ScrollView>
